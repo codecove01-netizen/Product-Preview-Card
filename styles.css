@@ -60,7 +60,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding:0.8rem;
+    padding:1.2rem;
     font-family: var(--ff-fraunces);
     font-size: var(--fs-14);
     color:var(--black);
