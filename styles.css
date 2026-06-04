@@ -1,0 +1,216 @@
+/* ===================================
+   Frontend Mentor - Product Preview Card
+   Author: Arati D'sa
+=================================== */
+
+/* ===================================
+            CSS RESET
+=================================== */
+*{
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+/* ===================================
+            CUSTOM PROPERTIES
+=================================== */
+:root{
+    /* COLORS */
+
+    /* Primary Colors*/
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    /* Secondary Primary*/
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font Size */
+    --fs-14:0.88rem;
+
+    /* Font Weight */
+    --fw-500:500;
+    --fw-700:700;
+
+    /* Font Family */
+    --ff-montserrat:"Montserrat", sans-serif;
+    --ff-fraunces: "Fraunces", serif;
+}
+
+/* ===================================
+            GLOBAL STYLES
+=================================== */
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:0.8rem;
+    font-family: var(--ff-fraunces);
+    font-size: var(--fs-14);
+    color:var(--black);
+    background-color: var(--cream);
+}
+
+/* ===================================
+            LAYOUT
+=================================== */
+.container{
+    width:min(37.5rem,100%);
+    background-color: var(--white);
+    border-bottom-left-radius: 0.63rem;
+    border-bottom-right-radius: 0.63rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius:0.63rem;
+}
+
+/* ===================================
+            IMAGE CONTAINER
+=================================== */
+
+
+/* ===================================
+            CARD CONTAINER
+=================================== */
+.card-container{
+    margin-block-start:2rem;
+    padding-inline:1.9rem 1.9rem;
+}
+.card-heading{
+    text-transform: uppercase;
+    font-family: var(--ff-montserrat);
+    letter-spacing: 0.3rem;
+    color:var(--grey);
+    font-size:0.8rem;
+}
+.card-title{
+    margin-block-start:1.5rem;
+    font-size: 1.95rem;
+    line-height: 1;
+}
+.card-description{
+    margin-block-start:1.35rem;
+    line-height: 1.6;
+    font-size: var(--fs-14);
+    font-family: var(--ff-montserrat);
+    color:var(--grey);
+}
+.product-cost{
+   margin-block-start: 1.3rem;
+   font-size: 2rem;
+   display:flex;
+   align-items: center;
+   gap:0.75rem;
+   color:var(--green-500);
+}
+.product-cost span{
+    font-size: 0.8rem;
+    color:var(--grey);
+    font-family: var(--ff-montserrat);
+}
+
+/* ===================================
+            ADD BUTTON
+=================================== */
+.add-btn{
+    margin-block: 1.25rem 2.19rem;
+    width:100%;
+    padding-block:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green-500);
+    gap:0.63rem;
+    font-size: 0.86rem;
+    color:var(--white);
+    font-weight: var(--fw-700);
+    border:none;
+    border-radius: 0.63rem;
+    font-family: var(--ff-montserrat); 
+}
+.add-btn:hover{
+    cursor:pointer;
+}
+.add-btn:hover,
+.add-btn:focus-visible
+{
+    background-color: var(--green-700);
+}
+.add-btn:focus-visible{
+    outline:0.06rem solid var(--green-700);
+}
+
+/* ===================================
+            FOOTER
+=================================== */
+footer{
+    font-family: var(--ff-montserrat);
+    color:var(--black);
+    margin-block-start: 0.6rem;
+    font-size:0.8rem;
+}
+footer a{
+    text-decoration: none;
+    color:var(--green-500);
+    font-weight: var(--fw-700);
+}
+footer a:hover{
+    cursor:pointer;
+}
+footer a:hover,
+footer a:focus-visible{
+    color:var(--green-700);
+}
+footer a:focus-visible{
+    outline:0.06rem solid var(--green-700);
+}
+
+/* ===================================
+            DESKTOP STYLES
+=================================== */
+@media screen and (min-width:48rem){
+    .container{
+        display:flex;
+        flex-direction: row;
+    }
+    .image-container,.card-container{
+        width:50%;            
+    }
+    .card-container{
+        margin-block-start:0rem;
+    }
+    .card-title{
+        margin-block-start:1.2rem;
+        line-height: 1;
+    }
+    .card-description{
+        margin-block-start:1.4rem;
+        line-height: 1.7;
+    }
+    .product-cost{
+        margin-block-start: 1.4rem;
+        gap:1.13rem;
+    }
+    .add-btn{
+        margin-block: 1.6rem 0;
+    }   
+}

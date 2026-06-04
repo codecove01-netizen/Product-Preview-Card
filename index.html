@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- ICON -->
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+
+    <title>Product Preview Card | Frontend Mentor</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Container -->
+    <main class="container">
+
+        <!-- Image Container -->
+        <section class="image-container">
+            <picture>
+                <source
+                    media="(min-width: 768px)"
+                    srcset="./images/image-product-desktop.jpg" />
+                <img
+                    src="./images/image-product-mobile.jpg"
+                    alt="Gabrielle Essence Eau De Parfum bottle" class="perfume-img"/>
+            </picture>
+        </section>
+
+        <!-- Card Container -->
+        <section class="card-container" >
+            <p class="card-heading">Perfume</p>
+            <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="card-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                Perfumer-Creator for the House of CHANEL.</p>
+            <p class="product-cost">$149.99 <span><del>$169.99</del></span></p>
+            <button class="add-btn"><img src="./images/icon-cart.svg" alt="Cart Icon"> Add to Cart</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Challenge by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/codecove01-netizen">Arati D'sa</a>.</p>
+    </footer>    
+</body>
+</html>
