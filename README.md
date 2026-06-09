@@ -94,7 +94,7 @@ While building this project, I strengthened my understanding of:
 
 ## 🎯 The Challenge
 
-- Build out this social links profile and get it looking as close to the design as possible.
+- Build out this Product Preview Card and get it looking as close to the design as possible.
 - users should be able to:
   1. View the optimal layout depending on their device's screen size
   2. See hover and focus states for interactive elements
